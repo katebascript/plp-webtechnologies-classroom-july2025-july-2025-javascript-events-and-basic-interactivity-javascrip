@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background: #222;
+  color: #eee;
+}
+
+/* FAQ */
+.faq-answer {
+  display: none;
+  margin-left: 10px;
+  color: #555;
+}
+.faq-item.active .faq-answer {
+  display: block;
+}
+.faq-item.active h3 span {
+  transform: rotate(45deg);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+label {
+  margin-bottom: 15px;
+}
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+#formSuccess {
+  color: green;
+  font-weight: bold;
+}
